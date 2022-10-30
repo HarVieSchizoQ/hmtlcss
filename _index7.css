@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+.container-fluid{
+    
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.1fr;
+    grid-template-areas: "nav main main main" "nav main main main" "nav main main main" "nav footer footer footer";
+    grid-gap: 0.1em;
+}
+
+main{
+    grid-area: main;
+    background: #00ff00;
+}
+nav{
+    grid-area: nav;
+    background: linear-gradient(to right,
+    rgba(249,107,142,1),
+    rgba(218,103,230,1),
+    rgba(130,125,253,1));
+    
+   
+}
+ul{
+    list-style: none;
+    font-weight: 600;
+    margin-left: 14%;
+    padding-top: 8rem;
+    color: white; 
+    
+}
+li{
+    padding-top: 2rem;
+}
+@media all and (max-width: 550px){
+    nav ul{
+       list-style: none;
+       display: flex;
+       justify-content: space-between;
+       padding: 0rem;
+       font-size: 1rem;
+       margin-right: 2rem;
+       font-weight: 600;
+       position: relative;
+       margin-top: 1.5rem;
+       top: -1rem;
+       
+    }
+}
+@media all and (max-width: 1000px){
+    li{
+      
+       margin-left: -2rem; 
+       margin-right: 0rem;
+       
+    }
+}
+@media all and (min-width: 580px){
+    li{
+       font-size: 1.8rem;
+    }
+}
+
+
+footer{
+    grid-area: footer;
+    background: linear-gradient(to right, #43cea2,  #185a9d);
+    
+}
+
+.icons{
+    position: relative;
+    right: 16rem;
+    top: -3rem;
+    display: flex;
+    justify-content: end;
+}
+#icon{
+    margin-top: 6rem;
+    width: 80px;
+    padding: -10rem;
+    align-items: center;
+    margin-left: -2rem;
+    margin-right: 5.5rem;
+}
+
+
+
+@media all and (max-width: 550px){
+    .container-fluid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 4fr 0.8fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "footer"
+    }
+}
+
+main{
+    background: linear-gradient(to right, #43cea2,  #185a9d);
+}
+img{
+    width: 15rem;
+    float: right;
+    margin-right: 5rem;
+    margin-top: 10rem;    
+}
+h1, p, .rounded-pill{ 
+    margin-left: 8rem; 
+    
+}
+#header_1{
+    color: white;
+    padding-top: 6rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
+#description{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 50;
+}
+.rounded-pill{
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right,
+    rgba(249,107,142,1),
+    rgba(218,103,230,1),
+    rgba(130,125,253,1));
+    border-color: #43cea2;
+    color: white; 
+}
+
+@media all and (max-width: 550px){
+    #icon{
+        width: 50px;
+        position: relative;
+        right: -18rem;
+        
+    }
+}
+
+@media all and (max-width: 550px){
+    #hero{
+        width: 200px;
+        margin-right: 8rem;
+        margin-top: 2rem;
+    }
+}
+@media all and (max-width: 550px){
+    #header_1 br { content: 'none'; }
+        
+}
+@media all and (max-width: 550px){
+    #header_1{
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    }  
+}
+@media all and (max-width: 550px){
+    #description{
+        font-size: 1.5rem;
+        margin-right: 2.5rem;
+        margin-left: 3rem;
+    }
+}
+
+
+
